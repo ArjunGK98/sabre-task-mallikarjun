@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./src/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Global Sales</h1>
+      <div class="filter-card">
+        <input type="text" placeholder="company..." id="input-box" />
+        <p id="min-sales-txt">Minimum Sales ($)</p>
+        <div class="range-container">
+          <input type="range" id="range-input" min="0" max="2000" value="0" />
+          <div class="range-ouput-container">
+            <p id="range-output">0</p>
+          </div>
+        </div>
+        <button id="filter-btn">FILTER RESULTS</button>
+      </div>
+      <div class="header-text">
+        <h2>Sales Data</h2>
+        <button id="refresh-btn">REFRESH DATA</button>
+      </div>
+      <div class="table-data">
+        <table class="sales-table">
+          <thead>
+            <tr>
+              <th>NAME</th>
+              <th>COMPANY</th>
+              <th>MONTHLY SALES</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+        <div id="table-footer1">
+          <p>Page Sales sub total</p>
+          <p id="page-sales-total">50</p>
+        </div>
+        <div id="table-footer1">
+          <p>Total sales</p>
+          <p id="sales-total">50</p>
+        </div>
+      </div>
+      <div class="pagination">
+        <ul></ul>
+      </div>
+      <h2>Top Performers ($800/month)</h2>
+      <div class="footer-data">
+        <div id="footer-data1">
+          <p>Number of Clients</p>
+          <p id="client-percentage">0</p>
+        </div>
+        <div id="footer-data1">
+          <p>Average Monthly Sales</p>
+          <p id="client-sales"><span>$</span>0</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
